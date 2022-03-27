@@ -1,0 +1,38 @@
+{
+  "name": "@formify-tech/document-builder",
+  "version": "1.0.0",
+  "description": "Context based HTML template builder",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "rollup": "rollup -c"
+  },
+  "browser": "dist/@formify-document-builder.min.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://brandonchadlange@github.com/brandonchadlange/formify-document-builder.git"
+  },
+  "keywords": [
+    "html",
+    "modular",
+    "component",
+    "template",
+    "email"
+  ],
+  "author": "Formify",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brandonchadlange/formify-document-builder/issues"
+  },
+  "homepage": "https://github.com/brandonchadlange/formify-document-builder#readme",
+  "devDependencies": {
+    "@types/node": "^17.0.21",
+    "rollup": "^2.70.1",
+    "rollup-plugin-babel-minify": "^10.0.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typescript": "^4.6.2"
+  },
+  "types": "types/index.d.ts"
+}
