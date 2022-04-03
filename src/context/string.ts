@@ -1,6 +1,7 @@
 import {
   StringContainerBuilder,
   StringTextBuilder,
+  StringFormBuilder,
 } from "../builders/string/index";
 import { IElement } from "../interfaces/IElement";
 import { Builders } from "../types/builder";
@@ -8,6 +9,7 @@ import { Builders } from "../types/builder";
 const builders: Builders = {
   container: new StringContainerBuilder(),
   text: new StringTextBuilder(),
+  form: new StringFormBuilder(),
 };
 
 class StringContextBuilder {
