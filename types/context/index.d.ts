@@ -1,1 +1,1 @@
-export { DomContext } from "./dom";
+export { StringContext } from "./string";

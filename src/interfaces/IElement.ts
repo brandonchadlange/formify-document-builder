@@ -1,4 +1,4 @@
-import { Builders } from "../types/Builders";
+import { Builders } from "../types/builder";
 
 export interface IElement {
   build(builders: Builders);

@@ -7,7 +7,8 @@
     "moduleResolution": "node",
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "target": "es5",
+    "target": "ES6",
+    "module": "CommonJS",
     "typeRoots": [
       "node_modules/@types"
     ],

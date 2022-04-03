@@ -1,2 +1,3 @@
-export { Container } from "./element/container";
-export { DomContext } from "./context/dom";
+export { StringContext } from "./context";
+
+export { Container, Text } from "./elements/index";
