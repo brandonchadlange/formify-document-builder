@@ -1,3 +1,3 @@
 export { StringContext } from "./context";
 
-export { Container, Text, Form } from "./elements/index";
+export { Container, Text, Form, Input } from "./elements/index";

@@ -19,3 +19,20 @@ export type FormElementParams = ElementParams & {
   method?: FormElementMethod;
   action?: string;
 };
+
+type InputElementType =
+  | "text"
+  | "number"
+  | "checkbox"
+  | "date"
+  | "datetime-local"
+  | "time"
+  | "email"
+  | "password"
+  | "radio"
+  | "url";
+
+export type InputElementParams = ElementParams & {
+  name?: string;
+  type?: InputElementType;
+};

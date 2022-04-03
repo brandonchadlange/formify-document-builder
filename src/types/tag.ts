@@ -1,1 +1,1 @@
-export type TagName = "div" | "p" | "form";
+export type TagName = "div" | "p" | "form" | "input";
