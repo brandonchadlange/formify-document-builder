@@ -1,3 +1,3 @@
 export interface IBuilder {
-  build(children, builders);
+  build(children: any, builders: any): any;
 }

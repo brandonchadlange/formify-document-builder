@@ -1,15 +1,15 @@
 import { StringElement } from "../../abstractions/string";
 import { Builders } from "../../types/builder";
-import { InputElementParams } from "../../types/element";
+import { LinkElementParams } from "../../types/element";
 import { StringBuilder } from "./stringBuilder";
 
-export class StringInputBuilder extends StringBuilder {
+export class StringLinkBuilder extends StringBuilder {
   constructor() {
-    super("input");
+    super("a");
   }
 
-  build(params: InputElementParams, builders: Builders) {
-    const element = new StringElement("input");
+  build(params: LinkElementParams, builders: Builders) {
+    const element = new StringElement("a");
 
     if (params.id) {
       element.addAttribute("id", params.id);
@@ -17,14 +17,12 @@ export class StringInputBuilder extends StringBuilder {
 
     element.classList.add(...params.classes);
 
-    if (params.value) {
-      element.addAttribute("value", params.value);
+    if (params.href) {
+      element.addAttribute("href", params.href);
     }
 
-    element.addAttribute("type", params.type);
-
-    if (params.name) {
-      element.addAttribute("name", params.name);
+    if (params.target) {
+      element.addAttribute("target", params.target);
     }
 
     const childrenElements = params.children.map((child) =>

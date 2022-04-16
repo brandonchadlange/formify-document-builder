@@ -10,6 +10,11 @@ export class StringTextBuilder extends StringBuilder {
 
   build(params: TextElementParams, builders: Builders) {
     const element = new StringElement(params.type);
+
+    if (params.id) {
+      element.addAttribute("id", params.id);
+    }
+
     element.classList.add(...params.classes);
 
     const childrenElements = params.children.map((child) =>

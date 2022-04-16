@@ -30,9 +30,21 @@ type InputElementType =
   | "email"
   | "password"
   | "radio"
-  | "url";
+  | "url"
+  | "submit";
 
 export type InputElementParams = ElementParams & {
   name?: string;
   type?: InputElementType;
+  value?: string;
+};
+
+export type ImageElementParams = ElementParams & {
+  src?: string;
+  alt?: string;
+};
+
+export type LinkElementParams = ElementParams & {
+  href?: string;
+  target?: string;
 };

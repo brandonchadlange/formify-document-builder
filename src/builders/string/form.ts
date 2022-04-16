@@ -10,6 +10,11 @@ export class StringFormBuilder extends StringBuilder {
 
   build(params: FormElementParams, builders: Builders) {
     const element = new StringElement("form");
+
+    if (params.id) {
+      element.addAttribute("id", params.id);
+    }
+
     element.classList.add(...params.classes);
 
     if (params.action) {

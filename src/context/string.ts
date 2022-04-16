@@ -3,6 +3,8 @@ import {
   StringTextBuilder,
   StringFormBuilder,
   StringInputBuilder,
+  StringImageBuilder,
+  StringLinkBuilder,
 } from "../builders/string/index";
 import { IElement } from "../interfaces/IElement";
 import { Builders } from "../types/builder";
@@ -12,6 +14,8 @@ const builders: Builders = {
   text: new StringTextBuilder(),
   form: new StringFormBuilder(),
   input: new StringInputBuilder(),
+  image: new StringImageBuilder(),
+  link: new StringLinkBuilder(),
 };
 
 class StringContextBuilder {

@@ -1,1 +1,1 @@
-export function StringContext(...elements);
+export function StringContext(...elements: any[]): any;

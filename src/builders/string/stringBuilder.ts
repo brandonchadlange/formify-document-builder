@@ -13,6 +13,11 @@ export class StringBuilder implements IBuilder {
 
   build(params: ElementParams, builders: Builders) {
     const element = new StringElement(this._tagName);
+
+    if (params.id) {
+      element.addAttribute("id", params.id);
+    }
+
     element.classList.add(...params.classes);
 
     const childrenElements = params.children.map((child) =>
