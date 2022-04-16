@@ -71,7 +71,7 @@ export class StringElement implements IAbstractElement<string> {
     const attributeStrings = this._attributes.map(
       (attribute) => `${attribute.key}="${attribute.value}"`
     );
-    return attributeStrings.join("");
+    return attributeStrings.join(" ");
   }
 
   private buildAppends() {
@@ -83,7 +83,7 @@ class ClassList implements IClassList {
   private _classes: string[] = [];
 
   get value() {
-    return this._classes.join("");
+    return this._classes.join(" ");
   }
 
   get length() {
