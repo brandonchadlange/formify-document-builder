@@ -48,3 +48,7 @@ export type LinkElementParams = ElementParams & {
   href?: string;
   target?: string;
 };
+
+export type LabelElementParams = ElementParams & {
+  for?: string;
+};

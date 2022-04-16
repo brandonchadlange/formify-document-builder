@@ -4,3 +4,4 @@ export { Form } from "./form";
 export { Input } from "./input";
 export { Image } from "./image";
 export { Link } from "./link";
+export { Label } from "./label";

@@ -5,6 +5,7 @@ import {
   StringInputBuilder,
   StringImageBuilder,
   StringLinkBuilder,
+  StringLabelBuilder,
 } from "../builders/string/index";
 import { IElement } from "../interfaces/IElement";
 import { Builders } from "../types/builder";
@@ -16,6 +17,7 @@ const builders: Builders = {
   input: new StringInputBuilder(),
   image: new StringImageBuilder(),
   link: new StringLinkBuilder(),
+  label: new StringLabelBuilder(),
 };
 
 class StringContextBuilder {

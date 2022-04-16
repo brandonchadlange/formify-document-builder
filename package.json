@@ -1,6 +1,6 @@
 {
   "name": "@formify-tech/document-builder",
-  "version": "1.0.0",
+  "version": "1.0.4",
   "description": "Context based HTML template builder",
   "main": "dist/index.js",
   "scripts": {

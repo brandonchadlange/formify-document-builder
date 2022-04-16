@@ -6,6 +6,7 @@ export type Builder =
   | "form"
   | "input"
   | "image"
-  | "link";
+  | "link"
+  | "label";
 
 export type Builders = Record<Builder, IBuilder>;
